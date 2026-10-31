@@ -63,9 +63,9 @@ Comprehensive comparison of commercial B2B commerce and billing software, sorted
 
 ## 🔓 Open-Source GitHub Projects
 
-Curated list of self-hosted open-source B2B commerce platforms and billing engines, sorted by GitHub star count:
+Curated list of self-hosted open-source B2B commerce platforms and billing engines, sorted by GitHub Stars_Count:
 
-| 📦 Repository | ⭐ GitHub Stars | 🎯 Primary Focus | 🛠️ Tech Stack | 📜 License | 🚀 Key B2B & Billing Capabilities |
+| 📦 Repository | ⭐ GitHub_Stars | 🎯 Primary Focus | 🛠️ Tech Stack | 📜 License | 🚀 Key B2B & Billing Capabilities |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[Medusa](https://github.com/medusajs/medusa)** | [![Stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers) | Headless B2B Commerce | Node.js, TypeScript | MIT | Modular digital commerce backend featuring customer groups, tier pricing, multi-currency price lists, and extensible workflows for building custom B2B storefronts. |
 | **[Bagisto](https://github.com/bagisto/bagisto)** | [![Stars](https://img.shields.io/github/stars/bagisto/bagisto?style=social&color=white)](https://github.com/bagisto/bagisto/stargazers) | B2B & Multi-Vendor Commerce | PHP, Laravel, Vue.js | MIT | Feature-rich commerce engine with native B2B marketplace tools, request-for-quote (RFQ) modules, customer group pricing, and multi-currency/multi-inventory support. |
