@@ -1,10 +1,6 @@
 # Awesome-B2B-E-Commerce-Billing
 
-# Awesome-B2B-E-Commerce-Billing
-
 **Top B2B E Commerce Billing (Opensource) 🌟 Star if you like it! 🌟**
-
-
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 
@@ -12,186 +8,82 @@
 
 **Last updated: October 2026**
 
-
-
 This repository tracks notable **SaaS platforms** and **open-source projects** for **B2B E-Commerce & Billing**. These tools enable manufacturers, distributors, and wholesalers to run B2B storefronts with company accounts, negotiated pricing, quotes, and net terms—from fully managed enterprise platforms with ERP integration and native B2B billing to open-source commerce and billing engines that give organizations complete control over their quote-to-cash workflows.
 
-
-
-**Examples** include Shopify Plus, BigCommerce B2B Edition, HubSpot Commerce Hub, OroCommerce, Sana Commerce, NuORDER, Pepperi, Stripe Billing, Chargebee, and Zuora (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted B2B commerce, billing, and open infrastructure. **Critical note**: The open-source landscape splits into two categories—**B2B commerce platforms** (GrandNode, Spree) with storefronts and B2B pricing, and **billing engines** (UniBee) for subscription and invoice management. No open-source project matches OroCommerce's ERP-native depth or Shopify Plus's unlimited B2B catalogs out of the box.
-
-
+**Open-source emphasis**: This section features comprehensive options for self-hosted B2B commerce, subscription billing, and open infrastructure. **Critical note**: The open-source landscape splits into two categories—**B2B commerce platforms** (Medusa, Bagisto, Saleor, Spree, Vendure, Shopware, GrandNode, OroCommerce) with catalogs and negotiated B2B pricing, and **billing/invoicing engines** (Invoice Ninja, Crater, Kill Bill, UniBee) for subscription lifecycle and invoice management.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
-
-
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Shopify Plus](https://www.shopify.com/plus)**
-
-  **Enterprise commerce platform with native B2B capabilities**. B2B features include company profiles, up to **three active catalogs** on lower plans, unlimited catalogs on Plus, payment terms (net terms), volume pricing, and vaulted payments. Plus adds direct catalog assignment to individual companies for true customer-specific pricing at scale . **Pricing**: **$2,300/month** or 0.4% of monthly revenue (whichever is higher), capped around $40,000/month . **Free tier**: None. **Best for**: mid-market to enterprise merchants hitting catalog limits on lower plans or needing unlimited B2B catalogs—**trade-off**: multi-level approvals and formal RFQ workflows are not native and require custom development .
-
-
-
-- **[BigCommerce B2B Edition](https://www.bigcommerce.com/)**
-
-  **All-in-one B2B solution** integrated into the BigCommerce control panel. Adds company accounts, sales quotes with negotiated pricing, invoice management for purchase orders on net terms, user roles, sales agents, and a **Buyer Portal** for self-service purchasing workflows . **Pricing**: BigCommerce plans from **$39/month (Core)** to **$399/month (Scale)**; B2B Edition provisioned via app and support request . **Free tier**: Trial available. **Best for**: mid-market B2B brands wanting native B2B features without Shopify Plus pricing—**trade-off**: B2B Edition requires provisioning; not self-serve.
-
-
-
-- **[HubSpot Commerce Hub](https://www.hubspot.com/products/commerce)**
-
-  **CPQ, invoicing, and payments** on the HubSpot platform. Professional ($85/seat/month) adds quotes, e-signature (25/user/month), tiered pricing, and automated sales tax. Enterprise ($140/seat/month) adds advanced approvals and 50 signatures/user/month. Payment processing: **2.9% + $0.5% platform fee** for HubSpot Payments; or keep Stripe with **0.75% platform fee** . **Free tier**: Yes, basic invoices and payment links. **Best for**: HubSpot CRM users wanting quote-to-cash without leaving the platform—**trade-off**: not a full storefront; commerce is quote and invoice-centric.
-
-
-
-- **[OroCommerce](https://oroinc.com/b2b-ecommerce/)**
-
-  **Enterprise B2B commerce platform** built for manufacturers, distributors, and wholesalers. Handles **8 million+ SKUs**, hundreds of millions of prices, and tens of thousands of orders per hour. Features segmentation engine, AI-powered search, **OroPay** (native payments with Global Payments), customer invoicing portal, and native integrations with SAP, NetSuite, Microsoft Dynamics, and Epicor . **Pricing**: Quote-only. **Free tier**: None. **Best for**: complex B2B operations needing ERP-native pricing, invoicing, and scale—**trade-off**: enterprise implementation commitment.
-
-
-
-- **[Sana Commerce](https://www.sana-commerce.com/)**
-
-  **ERP-integrated B2B e-commerce** for manufacturers and distributors. Direct ERP connection means real-time product, pricing, and stock data without sync overhead. Features include ordering by customer's own article numbers, guided product finder, and real-time inventory visibility across warehouses . **Pricing**: Quote-only. **Free tier**: None. **Best for**: Microsoft Dynamics and SAP ERP customers wanting a storefront that mirrors ERP data in real time—**trade-off**: ERP-centric; less flexible for non-ERP-driven pricing.
-
-
-
-- **[NuORDER by Lightspeed](https://www.nuorder.com/)**
-
-  **B2B eCommerce for wholesale fashion and retail**. Brands and retailers browse catalogs, access real-time inventory, and place orders via desktop or mobile app. Mobile app supports offline order creation, barcode scanning, and buyer signatures. AI features for buying intelligence and assortment planning . **Pricing**: Quote-only. **Free tier**: None. **Best for**: fashion and lifestyle brands selling wholesale to retailers—**trade-off**: vertical-specific; not a general B2B platform.
-
-
-
-- **[Pepperi](https://www.pepperi.com/)**
-
-  **Unified B2B commerce platform** for consumer goods manufacturers, distributors, and wholesalers. Combines B2B eCommerce storefront, Sales Force Automation, Retail Execution, Direct Store Delivery (DSD), and Trade Promotions. Route accounting app for iOS/Android supports van sales and offline order placement . **Pricing**: Quote-only. **Free tier**: None. **Best for**: consumer goods teams needing field sales and DSD alongside B2B ordering—**trade-off**: training investment required to maximize value.
-
-
-
-- **[Stripe Billing](https://stripe.com/billing)**
-
-  **Subscription and invoice billing** infrastructure. Handles recurring billing, invoicing, revenue recognition, and payment collection for B2B subscription models. **Pricing**: Usage-based; percentage of billing volume. **Free tier**: None for Billing. **Best for**: SaaS and subscription B2B businesses wanting billing without a full commerce platform.
-
-
-
-- **[Chargebee](https://www.chargebee.com/)**
-
-  **Subscription management and billing** for SaaS and recurring revenue businesses. **Pricing**: Quote-only; tiered by revenue. **Free tier**: Trial available. **Best for**: subscription B2B companies needing dunning, revenue recognition, and plan management.
-
-
-
-- **[Zuora](https://www.zuora.com/)**
-
-  **Enterprise subscription billing and monetization** platform. **Pricing**: Quote-only. **Free tier**: None. **Best for**: large enterprises with complex subscription and usage-based billing models.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[GrandNode](https://github.com/grandnode/grandnode2)**
-
-  **Open-source e-commerce platform for .NET** (license per repo) — **the strongest open-source B2B storefront for .NET teams**, with native B2B features on a self-hosted stack . **Features**: **B2B and B2C from the same catalog**; **customer groups, tier prices, sales employees** for B2B workflows; **multi-store** and **multi-vendor marketplace**; **payments** via Stripe Checkout, Braintree, cash on delivery, and plugins; **REST API** for headless storefronts and ERP/PIM/CRM integration; Docker and Kubernetes deployment . **Tech stack**: ASP.NET Core 10, C#, MongoDB, Vue 3. **Deploy**: Self-hosted (Docker images on Docker Hub and GHCR) . **Trade-off**: **.NET ecosystem lock-in**—best for C#/.NET teams. MongoDB dependency. No native quote-to-cash workflow or invoice management; billing is payment-oriented, not subscription-grade. **Best for**: .NET development teams wanting a self-hosted B2B commerce platform with tier pricing, multi-store, and headless API capabilities.
-
-
-
-- **[Spree Commerce](https://github.com/spree/spree)**
-
-  **Open-source B2B commerce platform** (AGPL-3.0 for Community) — **the most battle-tested open-source B2B storefront**, validated by Maisonette (65,000+ products, hundreds of brands). **Features**: **B2B wholesale portal** with spreadsheet-style grid ordering and customer-specific pricing at checkout; **Price Lists** for custom pricing by buyer organization; **multi-vendor marketplace module**; **Enterprise Edition** adds buyer organizations with spending limits and role-based purchasing. **Tech stack**: Ruby on Rails. **Deploy**: Self-hosted (Docker-first; no Redis required in 5.6). **Trade-off**: **Full platform adoption**; billing is payment-integration-based, not native subscription/invoice management. **Best for**: B2B distributors wanting a proven open-source storefront with wholesale pricing and payment integration.
-
-
-
-- **[UniBee](https://github.com/UniBee-Billing/unibee)**
-
-  **Open-source universal billing software for SaaS businesses** (AGPLv3) — **the most complete open-source billing engine** for subscription and invoice management, positioned as a free alternative to Chargebee, Recurly, and Paddle . **Features**: **Subscription management** (create, update, cancel); **invoicing** with automatic generation and sending; **billable metrics** tracking; **product and plan management**; **webhooks** for real-time events; **user management** with permissions; **reports** for business performance; **transaction management** including refunds; **discounts**; user portal or API integration . **Tech stack**: Docker, PostgreSQL, Redis (per deployment instructions). **Deploy**: Self-hosted (`docker-compose up`) or UniBee Cloud (paid SaaS) . **Trade-off**: **SaaS billing-focused**—not a B2B commerce storefront. No product catalog, checkout, or order management for physical goods. **Best for**: SaaS and subscription businesses wanting a self-hosted billing engine without commercial licensing—especially teams migrating from WooCommerce, WHMCS, or KillBill .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Medusa** — Open-source headless commerce (MIT). Modular architecture; B2B features require custom development. **Best for**: developers wanting a TypeScript foundation to build B2B workflows.
-
-- **Vendure** — TypeScript-native headless commerce (GPLv3). Plugin-first architecture; B2B pricing and approvals require Vendure Platform (commercial). **Best for**: teams wanting GraphQL-native commerce with plugin extensibility.
-
-- **Saleor** — GraphQL-first headless commerce (BSD-3-Clause). Mature API; B2B features require custom apps. **Best for**: teams wanting a GraphQL-native backend.
-
-
-
-**Frameworks for building custom systems**: Combine **GrandNode** or **Spree** as the B2B storefront with **UniBee** for subscription billing, and a payment processor (Stripe, Adyen) for transaction processing—creating a B2B e-commerce and billing stack. **None of these match OroCommerce's ERP-native quote-to-cash depth or Shopify Plus's unlimited B2B catalogs**; those require commercial platforms or significant custom development.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- B2B commerce and billing platforms handling financial data and transactions must comply with PCI DSS, data protection regulations (GDPR, CCPA, etc.), and tax regulations.
-
-- **The "B2B commerce platform" vs. "billing engine" distinction is critical.** **Shopify Plus, BigCommerce B2B, OroCommerce, Sana, NuORDER, and Pepperi** are **commerce platforms**—they provide storefronts, catalogs, and B2B purchasing workflows. **HubSpot Commerce Hub** is **quote-to-cash**—it handles quotes, invoices, and payments but not a product storefront. **Stripe Billing, Chargebee, and Zuora** are **billing engines**—they manage subscriptions and invoices, not commerce. **UniBee** is an **open-source billing engine**. **GrandNode and Spree** are **open-source commerce platforms**. **No single open-source project covers both B2B storefront and subscription billing end-to-end.**
-
-- **Shopify Plus's B2B catalog limits are a key decision point.** Lower Shopify plans now include up to three B2B catalogs; **Plus unlocks unlimited catalogs** for customer-specific pricing at scale . **If you have more than a handful of differently priced accounts, Plus is the practical threshold.**
-
-- **BigCommerce B2B Edition is provisioned via app and support request**, not self-serve . **Factor provisioning time into your evaluation.**
-
-- **OroCommerce and Sana Commerce are ERP-native platforms**—their value depends on your ERP (SAP, NetSuite, Dynamics). **If you are not ERP-centric, their differentiation is reduced.**
-
-- **NuORDER and Pepperi are vertical-specific**—fashion/wholesale and consumer goods/DSD respectively. **They are not general-purpose B2B platforms.**
-
-- **UniBee is the only mature open-source billing engine** in this list, explicitly positioned as a Chargebee/Recurly alternative . **The trade-off**: it is SaaS subscription billing, not B2B commerce with catalogs and orders.
-
-- **Pricing opacity varies.** Shopify Plus publishes $2,300/month minimum . BigCommerce publishes plan tiers . HubSpot publishes per-seat pricing . OroCommerce, Sana, NuORDER, Pepperi, Chargebee, and Zuora require sales contact. **Validate with direct vendor conversations against your catalog complexity and billing volume.**
-
-- Self-hosted open-source solutions require proper infrastructure, payment processor integration, PCI compliance (if handling card data), and ongoing maintenance. **B2B financial data is sensitive**—ensure your deployment meets all applicable security and compliance requirements before processing live transactions.
-
-
 
 ---
 
+## Sector Overview & Market Dynamics
 
+The global B2B e-commerce transactional market is estimated between **$26 trillion and $36 trillion** (with dedicated B2B commerce software and billing platforms representing a rapidly growing multi-billion dollar SaaS sector). The market is **moderately fragmented**—while horizontal checkout and digital storefront giants like Shopify and Stripe hold substantial market share in digital retail and developer payments, enterprise B2B quote-to-cash workflows remain decentralized across specialized ERP-integrated platforms (OroCommerce, Sana), vertical wholesale suites (NuORDER, Pepperi), and dedicated recurring billing monetization engines (Zuora, Chargebee).
+
+---
+
+## SaaS/Hosted Platforms
+
+| Product | Company Size / Valuation / Revenue | Pricing | Free Tier / Trial Limits | Description & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| [Shopify Plus](https://www.shopify.com/plus) | ~$215B Market Cap (~$12B TTM Revenue) | Starts at **$2,300/month** (3-yr term) or $2,500/month (1-yr term) | **No permanent free tier**; 3-day standard trial applies to regular plans only (targeted 30-day merchant pilots available upon invitation) | Enterprise commerce platform with native B2B capabilities including company profiles, custom price lists, and unlimited B2B catalogs. Best for high-growth mid-market to enterprise merchants. |
+| [Stripe Billing](https://stripe.com/billing) | ~$159B Private Valuation (~$6.8B ARR) | Starts at **0.7% per recurring transaction** (pay-as-you-go; 0.4% per paid invoice for one-off billing) | **No permanent free tier** for live billing volume; **unlimited free testing** in Stripe Test Mode / Sandboxes (up to 5 isolated sandboxes) | Subscription and recurring billing infrastructure handling automated invoicing, prorations, and revenue management. Best for developer-first SaaS and subscription platforms. |
+| [HubSpot Commerce Hub](https://www.hubspot.com/products/commerce) | ~$12B Market Cap (~$3.1B ARR) | Starts at **$85/seat/month** (Professional tier, billed annually) + 2.9% + 0.5% platform fee | **Forever Free Tier available** (limited to basic one-off invoices, payment links, and up to 2 CRM users; excludes advanced quotes & subscriptions) | CPQ, quoting, invoicing, and payment links natively embedded inside the HubSpot CRM ecosystem. Best for sales-driven teams wanting quote-to-cash without a separate storefront. |
+| [Chargebee](https://www.chargebee.com/) | ~$3.5B Private Valuation (~$250M ARR) | Starts at **$0/month** (Starter Plan) / $599/month (Performance Plan, billed annually) | **Forever Free Tier available** (Starter Plan covers up to **$250,000 in cumulative lifetime billing**; 0.75% overage fee thereafter); 14-day free trial on higher tiers | Subscription management and recurring billing platform supporting complex dunning, tax compliance, and revenue recognition. Best for fast-growing SaaS and recurring B2B subscriptions. |
+| [Zuora](https://www.zuora.com/) | ~$1.7B Private Take-Private Value (~$430M ARR) | Starts at approx. **$75,000/year** (custom enterprise contract tiers) | **No permanent free tier**; free developer API sandboxes and guided proof-of-concept trials available upon sales request | Enterprise subscription billing, CPQ, and revenue recognition engine built for complex usage-based pricing models. Best for large enterprises with complex monetization structures. |
+| [NuORDER by Lightspeed](https://www.nuorder.com/) | ~$425M Acquisition Valuation (~$600M+ Parent Lightspeed Revenue) | Starts at approx. **$7,000/year** (~$600/month, annual commitment) | **No general public free trial**; complimentary retail buyer portal access available strictly for select wholesale retail partner networks | B2B wholesale platform designed for fashion, retail, and lifestyle brands featuring visual digital line sheets and trade order writing. Best for wholesale brands and department store suppliers. |
+| [BigCommerce B2B Edition](https://www.bigcommerce.com/) | ~$300M Market Cap (~$340M ARR) | Starts at approx. **$1,000/month** base Enterprise + ~$500/month B2B Edition add-on (~$18,000/year) | **15-day free trial** (standard storefront trial with no credit card required; B2B buyer portal features require sales-assisted enterprise demo) | Comprehensive B2B commerce solution integrated into BigCommerce, offering buyer corporate hierarchies, sales rep masquerading, and custom price lists. Best for mid-market merchants. |
+| [Sana Commerce](https://www.sana-commerce.com/) | ~$50M–$60M ARR (Privately Held) | Custom enterprise quote (starts at approx. **$1,000/month** / $12,000/year for Essential tier) | **No permanent free tier or self-serve free trial**; guided ERP environment compatibility review and personalized demo provided upon request | ERP-integrated B2B e-commerce platform communicating directly with SAP and Microsoft Dynamics in real time. Best for manufacturers and distributors running SAP or Dynamics. |
+| [Pepperi](https://www.pepperi.com/) | ~$15M–$25M ARR (Privately Held) | Starts at approx. **$500/month** (Pro plan base, user-tiered pricing model) | **No standard web platform free trial**; limited evaluation mode on mobile field app with guided demo required for back-office configuration | Unified B2B commerce combining web storefronts, field sales automation, trade promotion management, and route accounting. Best for consumer goods brands and direct store delivery (DSD). |
+| [OroCommerce](https://oroinc.com/b2b-ecommerce/) | ~$10M–$20M ARR (Privately Held) | Custom enterprise quote based on GMV bands (Community Edition is $0 open-source) | **No cloud enterprise free trial**; Community Edition is 100% free to self-host without time limits; guided demo available for Enterprise | Enterprise-grade B2B e-commerce platform engineered specifically for complex manufacturing, wholesale, and distributor workflows with multi-org hierarchies and RFQ processes. |
+
+---
+
+## Open-Source GitHub Projects
+
+Curated list of self-hosted open-source B2B commerce platforms and billing engines, sorted by GitHub star count:
+
+| Repository | GitHub Stars | Primary Focus | Tech Stack | License | Key B2B & Billing Capabilities |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Medusa](https://github.com/medusajs/medusa)** | [![Stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers) | Headless B2B Commerce | Node.js, TypeScript | MIT | Modular digital commerce backend featuring customer groups, tier pricing, multi-currency price lists, and extensible workflows for building custom B2B storefronts. |
+| **[Bagisto](https://github.com/bagisto/bagisto)** | [![Stars](https://img.shields.io/github/stars/bagisto/bagisto?style=social&color=white)](https://github.com/bagisto/bagisto/stargazers) | B2B & Multi-Vendor Commerce | PHP, Laravel, Vue.js | MIT | Feature-rich commerce engine with native B2B marketplace tools, request-for-quote (RFQ) modules, customer group pricing, and multi-currency/multi-inventory support. |
+| **[Saleor](https://github.com/saleor/saleor)** | [![Stars](https://img.shields.io/github/stars/saleor/saleor?style=social&color=white)](https://github.com/saleor/saleor/stargazers) | Headless GraphQL Commerce | Python, Django, GraphQL | BSD-3-Clause | Enterprise headless commerce engine featuring multi-channel orchestration, custom price books, granular permission groups, and webhook-driven ERP integration. |
+| **[Spree Commerce](https://github.com/spree/spree)** | [![Stars](https://img.shields.io/github/stars/spree/spree?style=social&color=white)](https://github.com/spree/spree/stargazers) | B2B Wholesale Commerce | Ruby on Rails | AGPL-3.0 | Battle-tested wholesale platform featuring quick-order bulk matrices, custom client price lists, spending limits, and multi-vendor marketplace expansion. |
+| **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | [![Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) | Invoicing & Subscription Billing | PHP, Laravel, Flutter | Elastic License 2.0 | Complete self-hosted invoice and recurring billing management suite supporting quotes, purchase orders, client customer portals, and 30+ payment gateways. |
+| **[Vendure](https://github.com/vendurehq/vendure)** | [![Stars](https://img.shields.io/github/stars/vendurehq/vendure?style=social&color=white)](https://github.com/vendurehq/vendure/stargazers) | Headless GraphQL Commerce | TypeScript, Node.js | GPLv3 / Commercial | Modern headless framework with plugin architecture, role-based access controls, tiered pricing tables, and configurable checkout pipelines. |
+| **[Crater](https://github.com/crater-invoice-inc/crater)** | [![Stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers) | Invoicing & Expense Tracking | PHP, Laravel, Vue.js | Open Source | Clean open-source invoicing software allowing businesses to track expenses, issue professional PDF invoices/estimates, and collect online payments. |
+| **[Kill Bill](https://github.com/killbill/killbill)** | [![Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) | Open-Source Subscription Billing | Java | Apache-2.0 | Robust billing and payment processing platform supporting real-time catalog management, complex recurring billing cycles, dunning logic, and payment routing. |
+| **[Shopware](https://github.com/shopware/shopware)** | [![Stars](https://img.shields.io/github/stars/shopware/shopware?style=social&color=white)](https://github.com/shopware/shopware/stargazers) | Enterprise B2B/B2C Commerce | PHP, Symfony, Vue.js | MIT | Modular commerce system with an advanced Rule Builder, B2B Suite module for quote workflows, budget management, sales rep roles, and complex pricing rules. |
+| **[GrandNode](https://github.com/grandnode/grandnode2)** | [![Stars](https://img.shields.io/github/stars/grandnode/grandnode2?style=social&color=white)](https://github.com/grandnode/grandnode2/stargazers) | .NET B2B E-Commerce | ASP.NET Core, C#, MongoDB | GPL-3.0 | Cross-platform .NET commerce engine with native customer tier pricing, sales employee roles, multi-store/multi-vendor catalogs, and headless REST APIs. |
+| **[UniBee](https://github.com/UniBee-Billing/unibee)** | [![Stars](https://img.shields.io/github/stars/UniBee-Billing/unibee?style=social&color=white)](https://github.com/UniBee-Billing/unibee/stargazers) | SaaS Billing & Subscriptions | Go / Java, Vue | AGPL-3.0 | Universal subscription billing engine engineered as a self-hosted alternative to Chargebee/Stripe Billing, offering plan management, metrics, and automated invoicing. |
+| **[OroCommerce Community](https://github.com/oroinc/orocommerce)** | [![Stars](https://img.shields.io/github/stars/oroinc/orocommerce?style=social&color=white)](https://github.com/oroinc/orocommerce/stargazers) | Enterprise B2B Commerce | PHP, Symfony | OSL-3.0 | Dedicated open-source B2B platform with robust corporate account structures, multiple shopping lists, custom price books, and RFQ management. |
+
+---
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format and table structure).
+3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- B2B commerce and billing platforms handling financial data and transactions must comply with PCI DSS, data protection regulations (GDPR, CCPA, etc.), and tax regulations.
+- **The "B2B commerce platform" vs. "billing engine" distinction is critical.** Platforms like **Shopify Plus, BigCommerce B2B, OroCommerce, Sana, NuORDER, Pepperi, Medusa, Bagisto, Saleor, Spree, Vendure, Shopware, and GrandNode** provide storefronts, product catalogs, and order management. Engines like **Stripe Billing, Chargebee, Zuora, Invoice Ninja, Crater, Kill Bill, and UniBee** manage subscription lifecycles, invoices, and payments.
+- Self-hosted open-source solutions require proper infrastructure, payment processor integration, PCI compliance, and ongoing maintenance.
+
+---
 
 **Made for developers, B2B merchants, and organizations building transparent commerce and billing solutions.**
-
-Let's make B2B E-Commerce & Billing more open, data-driven, and quote-to-cash friendly.
