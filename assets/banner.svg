@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="1" stroke-opacity="0.4" />
+    </pattern>
+
+    <!-- Glowing Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+    }
+    .tagline {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      fill: #38bdf8;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+
+    /* Ambient Pulsing Animations */
+    @keyframes pulse-orb {
+      0%, 100% { transform: scale(1); opacity: 0.35; }
+      50% { transform: scale(1.15); opacity: 0.55; }
+    }
+    @keyframes float-card-1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes float-card-2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes dash-move {
+      to { stroke-dashoffset: -40; }
+    }
+
+    .orb-1 {
+      transform-origin: 200px 150px;
+      animation: pulse-orb 8s ease-in-out infinite;
+    }
+    .orb-2 {
+      transform-origin: 1000px 250px;
+      animation: pulse-orb 10s ease-in-out infinite 2s;
+    }
+    .floating-card-1 {
+      animation: float-card-1 6s ease-in-out infinite;
+    }
+    .floating-card-2 {
+      animation: float-card-2 7s ease-in-out infinite 1s;
+    }
+    .animated-wire {
+      stroke-dasharray: 8, 8;
+      animation: dash-move 3s linear infinite;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" />
+  <rect width="1200" height="420" fill="url(#grid)" />
+
+  <!-- Ambient Dynamic Glowing Orbs (Behind Text) -->
+  <g filter="url(#glow)">
+    <circle class="orb-1" cx="220" cy="120" r="140" fill="#38bdf8" opacity="0.25" />
+    <circle class="orb-2" cx="980" cy="240" r="170" fill="#818cf8" opacity="0.22" />
+    <circle class="orb-1" cx="600" cy="380" r="110" fill="#c084fc" opacity="0.18" />
+  </g>
+
+  <!-- Background Decorative Dynamic Elements & Animated Connectors -->
+  <g opacity="0.85">
+    <!-- Curved Data Flow Line 1 -->
+    <path class="animated-wire" d="M 100 350 C 300 280, 500 400, 750 330 C 900 290, 1050 360, 1150 310" 
+          fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.4" />
+    
+    <!-- Curved Data Flow Line 2 -->
+    <path class="animated-wire" d="M 50 100 C 250 50, 450 140, 700 80 C 950 20, 1100 120, 1180 80" 
+          fill="none" stroke="#818cf8" stroke-width="2" stroke-opacity="0.3" />
+
+    <!-- Interactive Pill / Feature Badge 1 (Right Floating) -->
+    <g class="floating-card-1" transform="translate(860, 60)">
+      <rect width="260" height="56" rx="28" fill="#1e293b" fill-opacity="0.75" stroke="url(#card-border)" stroke-width="1.5" />
+      <circle cx="30" cy="28" r="14" fill="#38bdf8" fill-opacity="0.2" />
+      <circle cx="30" cy="28" r="6" fill="#38bdf8" />
+      <text x="56" y="33" class="badge-text">⚡ Quote-to-Cash Automation</text>
+    </g>
+
+    <!-- Interactive Pill / Feature Badge 2 (Right Mid Floating) -->
+    <g class="floating-card-2" transform="translate(890, 140)">
+      <rect width="240" height="56" rx="28" fill="#1e293b" fill-opacity="0.75" stroke="url(#card-border)" stroke-width="1.5" />
+      <circle cx="30" cy="28" r="14" fill="#10b981" fill-opacity="0.2" />
+      <circle cx="30" cy="28" r="6" fill="#10b981" />
+      <text x="56" y="33" class="badge-text">🏢 Tiered B2B Catalogs</text>
+    </g>
+
+    <!-- Interactive Pill / Feature Badge 3 (Left Bottom Floating) -->
+    <g class="floating-card-1" transform="translate(840, 220)">
+      <rect width="280" height="56" rx="28" fill="#1e293b" fill-opacity="0.75" stroke="url(#card-border)" stroke-width="1.5" />
+      <circle cx="30" cy="28" r="14" fill="#c084fc" fill-opacity="0.2" />
+      <circle cx="30" cy="28" r="6" fill="#c084fc" />
+      <text x="56" y="33" class="badge-text">🔄 ERP &amp; Recurring Invoicing</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Tagline, Title, Subtitle, Highlights -->
+  <!-- Tagline Pill -->
+  <g transform="translate(80, 75)">
+    <rect width="295" height="32" rx="16" fill="#0284c7" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="18" cy="16" r="4" fill="#38bdf8" />
+    <text x="32" y="21" class="tagline">Enterprise &amp; Open Source</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(80, 160)">
+    <text class="title">
+      Awesome <tspan fill="url(#primary-grad)">B2B E-Commerce</tspan> &amp; Billing
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(80, 208)">
+    <text class="subtitle">
+      Curated platforms, headless commerce engines, ERP integrations &amp; subscription billing tools.
+    </text>
+  </g>
+
+  <!-- Feature Tags / Highlights Bar (Foreground) -->
+  <g transform="translate(80, 280)">
+    <!-- Tag 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="42" rx="10" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+      <text x="18" y="26" class="badge-text">💼 Net Terms &amp; POs</text>
+    </g>
+    <!-- Tag 2 -->
+    <g transform="translate(195, 0)">
+      <rect width="195" height="42" rx="10" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+      <text x="18" y="26" class="badge-text">📦 Wholesale Portals</text>
+    </g>
+    <!-- Tag 3 -->
+    <g transform="translate(405, 0)">
+      <rect width="215" height="42" rx="10" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+      <text x="18" y="26" class="badge-text">📊 Subscription Billing</text>
+    </g>
+    <!-- Tag 4 -->
+    <g transform="translate(635, 0)">
+      <rect width="170" height="42" rx="10" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+      <text x="18" y="26" class="badge-text">🔓 Self-Hosted</text>
+    </g>
+  </g>
+</svg>
